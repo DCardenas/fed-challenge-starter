@@ -1,0 +1,110 @@
+.container {
+  width: 380px;
+  height: 380px;
+  border-radius: var(--border-radius);
+  margin: 1rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  object-fit: contain;
+  position: relative;
+  cursor: pointer;
+}
+
+.thumb_container {
+  position: relative;
+}
+
+.thumb {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  border-top-right-radius: var(--border-radius);
+  width: 39%;
+  height: calc(100% - 5px);
+  background: rgba(35, 38, 63, 0.65);
+  top: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.overlay_number {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.overlay_center {
+  margin: 10px 0px;
+}
+
+.details_container {
+  padding: 0 1.5rem;
+}
+
+.header {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 0.75rem;
+}
+
+.title {
+  flex: 0.95;
+  font-weight: 800 !important;
+  font-size: 20px;
+}
+
+.details {
+  display: flex;
+}
+
+.details svg {
+  fill: grey;
+  margin-right: 4px;
+}
+
+.details div:last-child svg {
+  transform: rotate(-45deg);
+}
+
+.details div {
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.details div:first-child {
+  margin-right: 8px;
+}
+
+.link {
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 1rem;
+  left: 1.5rem;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.link a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
