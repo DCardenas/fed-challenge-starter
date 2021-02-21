@@ -3,7 +3,7 @@
   height: 380px;
   border-radius: var(--border-radius);
   margin: 1rem;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: 0.3s all ease-in-out;
   object-fit: contain;
   position: relative;
   cursor: pointer;

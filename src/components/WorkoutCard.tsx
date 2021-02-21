@@ -60,11 +60,15 @@ const WorkoutCard: React.FC<Props> = ({ data, isActive, toggleCard }) => {
             </div>
           </div>
         }
-        {isActive &&
-          <div className={styles.link}>
-            <a href="https://www.ifit.com">View Details</a>
-          </div>
-        }
+        <div 
+          className={styles.link}
+          style={{
+            opacity: isActive ? 1 : 0,
+            transition: '0.3s all ease-in-out',
+          }}
+        >
+          <a href="https://www.ifit.com">View Details</a>
+        </div>
       </div>
     </div>
   );
